@@ -1,0 +1,14 @@
+*.ts text
+*.js text
+*.md text
+*.json text
+*.yml text
+.editorconfig text
+.npmrc text
+.nvmrc text
+.prettierrc text
+.huskyrc test
+.lintstagerc text
+LICENSE text
+package-lock.json -diff
+*.js -diff

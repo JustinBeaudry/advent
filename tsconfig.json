@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    "charset": "utf-8",
+    "target": "es5",
+    "module": "esNext",
+    "esModuleInterop": true,
+    "lib": ["esnext", "dom"],
+    "moduleResolution": "node",
+    "declaration": true,
+    "declarationDir": "./lib",
+    "declarationMap": true,
+    "outDir": "./lib",
+    "preserveConstEnums": true,
+    "pretty": true,
+    "watch": true,
+    "importHelpers": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "strictPropertyInitialization": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "alwaysStrict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "resolveJsonModule": true,
+    "downlevelIteration": true
+  },
+  "compileOnSave": true,
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "defaultSeverity": "error",
+  "extends": [
+    "tslint:recommended",
+    "tslint-config-prettier"
+  ],
+  "rules": {
+    "no-unnecessary-type-assertion": true,
+    "array-type": [true, "array"],
+    "class-name": true,
+    "comment-format": [true, "check-space"],
+    "no-debugger": true,
+    "interface-name": [true, "never-prefix"],
+    "interface-over-type-literal": true,
+    "jsdoc-format": true,
+    "no-unnecessary-qualifier": true,
+    "object-literal-shorthand": true,
+    "no-var-keyword": true,
+    "no-var-requires": true,
+    "no-reference": true,
+    "no-floating-promises": [true, "Bluebird"],
+    "prefer-object-spread": true,
+    "prefer-readonly": true,
+    "no-namespace": true,
+    "no-parameter-reassignment": true,
+    "prefer-const": true,
+    "ban-comma-operator": true,
+    "curly": [true, "ignore-same-line"],
+    "cyclomatic-complexity": true,
+    "no-require-imports": true,
+    "no-invalid-this": true,
+    "no-invalid-template-strings": true,
+    "no-empty-interface": true,
+    "no-empty": [true, "allow-empty-catch"],
+    "no-conditional-assignment": false
+  }
+}

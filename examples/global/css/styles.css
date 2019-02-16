@@ -1,0 +1,187 @@
+/*
+   http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+* {
+  box-sizing: border-box;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+  font-size: 16px;
+  overflow: hidden;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/**
+ * Advent Example CSS
+ */
+header {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+h1 {
+  font-family: 'SF Pro Display Thin', sans-serif;
+  font-size: 2.5em;
+  font-weight: 100;
+}
+main {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.container {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  border-top: 1px solid black;
+}
+.input-container {
+  height: 100vh;
+  width: 40vw;
+  flex: 1;
+}
+.input-container form {
+  width: 40vw;
+}
+.input-container form textarea {
+  width: 50vw;
+  height: 200px;
+  outline: none;
+  overflow: auto;
+  padding: 10px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  resize: none;
+  font-size: 1.2em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+.input-container form .buttons {
+  display: flex;
+  justify-content: center;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  padding-top: 10px;
+}
+.input-container form .button::selection {}
+.input-container form button {
+  font-family: 'SF Pro Display Thin', 'sans-serif';
+  font-size: 1em;
+  padding: 5px 20px;
+  color: black;
+  text-transform: uppercase;
+  background-color: white;
+  border: 1px solid black;
+  cursor: pointer;
+  outline: none;
+  margin: 10px;
+}
+
+.output-container button.clear {
+  background-color: lightgray;
+  font-size: 1em;
+  font-weight: bold;
+  width: 60vw;
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+  color: black;
+  transition: all .4s ease;
+}
+.output-container button.clear:hover {
+  background-color: lightcoral;
+  color: white;
+}
+.output-container {
+  position: relative;
+  height: 100vh;
+  background-color: lightgray;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  flex: 2;
+}
+.output-container .toolbar {
+  position: sticky;
+  background-color: lightgray;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.output-container .toolbar .filters .levels {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid rgb(186, 186, 186);
+}
+.output-container .toolbar .filters .tags {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid rgb(186, 186, 186);
+  display: flex;
+  justify-content: center;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.output-container .toolbar .filters .check {
+  padding-left: 20px;
+}
+.output-container .toolbar .filters .tags .check {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.output-container ul {
+  width: 60vw;
+  margin-bottom: 120px;
+}
+.output-container ul li pre {
+  padding: 0 10px;
+  font-family: 'Menlo';
+  font-size: .8em;
+  height: 100%;
+  line-height: 1.5em;
+}
